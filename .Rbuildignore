@@ -1,0 +1,14 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.git$
+^\.gitignore$
+^\.github$
+^\.claude$
+^CLAUDE\.md$
+^CLAUDE_CHANGES\.md$
+^README\.Rmd$
+^LICENSE\.md$
+^docs$
+^data-raw$
+^_targets$
+^sandbox$

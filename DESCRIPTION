@@ -1,0 +1,36 @@
+Package: wnvSurv
+Title: West Nile Virus Surveillance Functions
+Version: 0.0.0.9000
+Authors@R:
+    person("Toby", "Koch", , "r.tobiaskoch@gmail.com", role = c("aut", "cre"))
+Description: Shared functions for West Nile virus mosquito surveillance work
+    in the Ebel Lab. Consolidates data ingest, cleaning, abundance/pooled
+    infection rate/vector index calculations, and standard plots used across
+    the wnv-ss_trap_hx_combiner and wnv-ss-wkly_report pipelines.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends:
+    R (>= 4.1)
+Imports:
+    cli,
+    dplyr,
+    ggplot2,
+    googledrive,
+    googlesheets4,
+    lubridate,
+    PooledInfRate,
+    purrr,
+    rlang,
+    stringr,
+    tidyr
+Suggests:
+    testthat (>= 3.0.0),
+    tibble
+Remotes:
+    CDCgov/PooledInfRate
+Config/testthat/edition: 3
+URL: https://github.com/rtobiaskoch/wnv-ss_functions
+BugReports: https://github.com/rtobiaskoch/wnv-ss_functions/issues
+LazyData: true

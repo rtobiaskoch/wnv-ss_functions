@@ -1,0 +1,20 @@
+# OS and IDEs
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.log
+.snakemake/
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+renv/library/
+
+# Claude session change log
+CLAUDE_CHANGES.md
