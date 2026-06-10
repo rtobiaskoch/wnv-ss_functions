@@ -7,6 +7,8 @@
 plot_n_trap(
   df,
   rm_zone = NULL,
+  year_start = NULL,
+  year_end = NULL,
   week_breaks = seq(23, 37, by = 5),
   week_limits = c(23, 37)
 )
@@ -16,6 +18,12 @@ plot_n_trap(
 \code{week}, \code{zone}, \code{zone2}, and \code{trap_status}. Run \code{\link[=wnv_s_clean]{wnv_s_clean()}} first.}
 
 \item{rm_zone}{Zones to drop entirely before plotting. Default \code{NULL}.}
+
+\item{year_start}{Earliest year to include (inclusive). Default \code{NULL}
+(no lower bound).}
+
+\item{year_end}{Latest year to include (inclusive). Default \code{NULL}
+(no upper bound).}
 
 \item{week_breaks}{Numeric vector of x-axis breaks. Default \code{seq(23, 37, by = 5)} (the canonical surveillance season).}
 
