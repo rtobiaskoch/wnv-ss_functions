@@ -47,8 +47,10 @@ plot_n_trap <- function(
     dplyr::mutate(
       trap_status = dplyr::case_when(
         any(.data$trap_status == "malfunction", na.rm = TRUE) ~ "malfunction",
+        any(.data$trap_status == "no trap", na.rm = TRUE) ~ "no trap",
         any(.data$trap_status == "culex", na.rm = TRUE) ~ "culex",
         any(.data$trap_status == "no culex", na.rm = TRUE) ~ "no culex",
+        any(trap_status %in% c("no culex", "other spp")) ~ "no culex",
         TRUE ~ "no mosquitoes"
       )
     ) |>
