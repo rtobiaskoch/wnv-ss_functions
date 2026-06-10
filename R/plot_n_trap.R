@@ -68,9 +68,11 @@ plot_n_trap <- function(
     ) +
     ggplot2::scale_color_manual(
       values = wnvSurv::trap_status_colors,
-      na.value = "grey40"
     ) +
-    ggplot2::scale_x_continuous(breaks = week_breaks, limits = week_limits) +
+    ggplot2::scale_x_continuous(
+      breaks = week_breaks,
+      limits = c(min(week_limits) - 0.5, max(week_limits) + 0.5)
+    ) +
     ggplot2::facet_grid(zone2 ~ year, scales = "free_y") +
     ggplot2::theme_classic()
 }
